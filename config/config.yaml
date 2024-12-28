@@ -1,0 +1,15 @@
+
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://drive.google.com/uc?id=1hLxq2YItjxyPILUNHAoLOaauqvYZp-IA
+  local_data_file: artifacts/data_ingestion/winequality-red.csv
+
+data_validation:
+   root_dir: artifacts/data_validation
+   Local_data_file_path: artifacts/data_ingestion/winequality-red.csv
+   STATUS_FILE: artifacts/data_validation/status.txt
+
+
