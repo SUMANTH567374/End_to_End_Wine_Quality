@@ -3,7 +3,7 @@ import urllib.request as request
 from Wine_Quality import logger
 from Wine_Quality.utils.common import get_size
 from Wine_Quality.entity.config_entity import DataIngestionConfig
-import pathlib as path
+from pathlib import Path
 import gdown
 
 class DataIngestion:
