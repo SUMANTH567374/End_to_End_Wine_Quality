@@ -29,7 +29,13 @@ def main():
         obj = PredictionPipeline()
         predict = obj.predict(data)
 
-        st.write(f"Predicted Wine Quality: {predict[0]}")
+        # Round the predicted value to the nearest integer
+        predicted_quality = round(predict[0])
+
+        # Ensure the prediction is within the expected wine quality range (1 to 10)
+        predicted_quality = max(1, min(predicted_quality, 10))
+
+        st.write(f"Predicted Wine Quality: {predicted_quality}")
 
 if __name__ == "__main__":
     main()
